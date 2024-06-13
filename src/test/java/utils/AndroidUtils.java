@@ -14,8 +14,11 @@ public class AndroidUtils {
 
     public Boolean objectExist(By by) {
         if (driver.findElements(by).size() == 0) {
+            assert false;
             return false;
+
         } else {
+            assert true;
             return true;
         }
     }

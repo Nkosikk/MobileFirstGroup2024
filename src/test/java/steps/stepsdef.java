@@ -1,6 +1,12 @@
 package steps;
 
+import io.cucumber.java.AfterStep;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.*;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
+import static utils.AppiumDriverFactory.driver;
 
 public class stepsdef extends Base {
 
@@ -23,6 +29,15 @@ public class stepsdef extends Base {
     @Then("The alarm menu is displayed")
     public void the_alarm_menu_is_displayed() {
         mainMenuPage.verifyAlarmIsDisplayed();
+    }
+
+
+    @AfterStep
+    public void tearDown(Scenario scenario) {
+        if (scenario.isFailed()) {
+            final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+            scenario.attach(screenshot, "image/png", "Failure Screenshot");
+        }
     }
 
 }

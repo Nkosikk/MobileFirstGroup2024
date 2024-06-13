@@ -17,7 +17,7 @@ public class MainMenuPage {
 
     private static By apiDemosTitle= By.xpath("//android.widget.TextView[@text=\"API Demos\"]");
     private static By appMenu= By.xpath("//android.widget.TextView[@content-desc=\"App\"]");
-    private static By alarmMenu= By.xpath("//android.widget.TextView[@content-desc=\"Alarm\"]");
+    private static By alarmMenu= By.xpath("//android.widget.TextView[@content-desc=\"NkosiAlarm\"]");
 
 
    public MainMenuPage(){

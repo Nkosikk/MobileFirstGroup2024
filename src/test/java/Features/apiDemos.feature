@@ -1,3 +1,4 @@
+@APIDemo
 Feature: API Demos
   Scenario: Verify API demos app
     Given The app is launched
