@@ -42,8 +42,8 @@ public class stepsdef extends Base {
         appMenuPage.verifyAlarmIsDisplayed();
     }
 
-    @After
-    public void resetApp(){
-        instanceOfAppiumDriverFactory.getDriver().quit();
-    }
+//    @After
+//    public void resetApp(){
+//        instanceOfAppiumDriverFactory.getDriver().quit();
+//    }
 }
