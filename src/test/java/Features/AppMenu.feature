@@ -1,5 +1,6 @@
 @App @Regression
-Feature: API Demos
+Feature: App Menu
+
   Scenario: Verify that alarm is displayed when the app menu is clicked
     Given The app is launched
     And I verify the heading

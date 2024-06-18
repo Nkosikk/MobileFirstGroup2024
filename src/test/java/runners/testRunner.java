@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src/test/java/Features",
         glue = {"steps"},
-//        tags = "@APIDemo",
+        tags = "@Regression",
         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         publish = true)
 public class testRunner extends AbstractTestNGCucumberTests {
