@@ -16,7 +16,7 @@ public class AppMenuPage {
 
     AppiumDriverFactory appiumDriverFactory=AppiumDriverFactory.getInstanceOfAppiumDriverFactory();
 
-    private static By alarmMenu= By.xpath("//android.widget.TextView[@content-desc=\"Alarm\"]");
+    private static final By alarmMenu= By.xpath("//android.widget.TextView[@content-desc=\"Alarm\"]");
 
 
 
