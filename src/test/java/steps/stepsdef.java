@@ -26,12 +26,6 @@ public class stepsdef extends Base {
         mainMenuPage.clickApp();
     }
 
-    @Then("The alarm menu is displayed")
-    public void the_alarm_menu_is_displayed() {
-        mainMenuPage.verifyAlarmIsDisplayed();
-    }
-
-
     @AfterStep
     public void tearDown(Scenario scenario) {
         if (scenario.isFailed()) {
@@ -40,4 +34,8 @@ public class stepsdef extends Base {
         }
     }
 
+    @Then("The alarm text is displayed")
+    public void theAlarmTextIsDisplayed() {
+        appMenuPage.verifyAlarmIsDisplayed();
+    }
 }
