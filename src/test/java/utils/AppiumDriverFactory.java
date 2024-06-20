@@ -20,8 +20,8 @@ public class AppiumDriverFactory {
         capabilities.setCapability("appium:autoGrantPermission", true);
         capabilities.setCapability("appium:app", System.getProperty("user.dir") + "/src/main/Apps/ApiDemos-debug.apk");
         try{
-            driver = new AndroidDriver(new URL(" http://127.0.0.1:4723/"),capabilities);
-//            driver = new AndroidDriver(new URL(" http://127.0.0.1:4723/wd/hub"),capabilities);
+//            driver = new AndroidDriver(new URL(" http://127.0.0.1:4723/"),capabilities);
+            driver = new AndroidDriver(new URL(" http://127.0.0.1:4723/wd/hub"),capabilities);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }

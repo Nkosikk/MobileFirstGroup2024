@@ -42,6 +42,16 @@ public class stepsdef extends Base {
         appMenuPage.verifyAlarmIsDisplayed();
     }
 
+    @And("I click Alarm")
+    public void iClickAlarm() {
+        appMenuPage.clickAlarmMenu();
+    }
+
+    @And("The alarm menu is displayed")
+    public void theAlarmMenuIsDisplayed() {
+        alarmPage.verifyAlarmServiceIsDisplayed();
+    }
+
 //    @After
 //    public void resetApp(){
 //        instanceOfAppiumDriverFactory.getDriver().quit();
