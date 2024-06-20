@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 public class AppiumDriverFactory {
     public static AppiumDriver driver;
 
-    public static AppiumDriverFactory instanceOfAppiumDriverFactory = null;
+    public static AppiumDriverFactory instanceOfAppiumDriverFactory;
 
     public AppiumDriverFactory() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -20,7 +20,7 @@ public class AppiumDriverFactory {
         capabilities.setCapability("appium:autoGrantPermission", true);
         capabilities.setCapability("autoAcceptAlert", true);
         capabilities.setCapability("appium:app", System.getProperty("user.dir") + "/src/main/Apps/ApiDemos-debug.apk");
-        capabilities.setCapability("resetOnNewSession", true);
+        capabilities.setCapability("fullReset", true);
         try{
             driver = new AndroidDriver(new URL(" http://127.0.0.1:4723/"),capabilities);
 //            driver = new AndroidDriver(new URL(" http://127.0.0.1:4723/wd/hub"),capabilities);
