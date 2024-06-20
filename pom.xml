@@ -18,17 +18,17 @@
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
-            <version>9.2.2</version>
+            <version>7.6.0</version>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>7.18.0</version>
+            <version>7.0.0</version>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-testng</artifactId>
-            <version>7.18.0</version>
+            <version>7.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.aventstack</groupId>
@@ -42,17 +42,5 @@
         </dependency>
 
     </dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>16</source>
-                    <target>16</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

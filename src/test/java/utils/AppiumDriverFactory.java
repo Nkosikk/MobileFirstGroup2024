@@ -18,9 +18,7 @@ public class AppiumDriverFactory {
         capabilities.setCapability("appium:automationName", "UiAutomator2");
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("appium:autoGrantPermission", true);
-        capabilities.setCapability("autoAcceptAlert", true);
         capabilities.setCapability("appium:app", System.getProperty("user.dir") + "/src/main/Apps/ApiDemos-debug.apk");
-        capabilities.setCapability("fullReset", true);
         try{
             driver = new AndroidDriver(new URL(" http://127.0.0.1:4723/"),capabilities);
 //            driver = new AndroidDriver(new URL(" http://127.0.0.1:4723/wd/hub"),capabilities);

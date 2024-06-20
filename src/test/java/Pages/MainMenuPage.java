@@ -25,7 +25,7 @@ public class MainMenuPage {
     }
 
     public void verifyAppIsLaunched() {
-        appiumDriverFactory.getDriver().resetCooldown();
+        appiumDriverFactory.getDriver().resetApp();
 
         if (androidUtils.objectExist(apiDemosTitle)) {
             Assert.assertTrue(true, "The app was successfully launched");
